@@ -3,6 +3,7 @@
   <head>
     <title>RailsSimpleAirbnb</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +12,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <%= link_to 'Simple AirBnb', flats_path, class: 'm-2' %>
+    </nav>
+    <div class="container mt-4">
+      <%= yield %>
+    </div>
   </body>
 </html>
